@@ -34,3 +34,4 @@ export const DEFAULT_APP_METADATA = {
   url: "https://walletconnect.org/",
   icons: ["https://walletconnect.org/walletconnect-logo.png"],
 };
+

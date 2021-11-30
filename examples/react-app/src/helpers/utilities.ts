@@ -2,6 +2,7 @@ import { BigNumber, BigNumberish, providers, utils } from "ethers";
 import * as encoding from "@walletconnect/encoding";
 import { TypedDataUtils } from "eth-sig-util";
 import * as ethUtil from "ethereumjs-util";
+import { Cards } from "./types";
 
 import { eip1271 } from "./eip1271";
 
@@ -10,6 +11,22 @@ export function capitalize(string: string): string {
     .split(" ")
     .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
+}
+
+export function isProposalCard(card: Cards.All): card is Cards.Proposal {
+  return card.type === "proposal";
+}
+
+export function isSessionCard(card: Cards.All): card is Cards.Session {
+  return card.type === "session";
+}
+
+export function isRequestCard(card: Cards.All): card is Cards.Request {
+  return card.type === "request";
+}
+
+export function isSettingsCard(card: Cards.All): card is Cards.Settings {
+  return card.type === "settings";
 }
 
 export function ellipseText(text = "", maxLength = 9999): string {

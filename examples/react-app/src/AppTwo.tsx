@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import KeyValueStorage from "keyvaluestorage";
 import Wallet from "caip-wallet";
 import Client, { CLIENT_EVENTS } from "@walletconnect/client";

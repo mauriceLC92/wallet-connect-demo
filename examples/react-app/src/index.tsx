@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import { createGlobalStyle } from "styled-components";
 
 import App from "./App";
+import AppTwo from "./AppTwo";
 import { globalStyle } from "./styles";
 const GlobalStyle = createGlobalStyle`
   ${globalStyle}
@@ -19,6 +20,7 @@ ReactDOM.render(
   <>
     <GlobalStyle />
     <App />
+    <AppTwo />
   </>,
   document.getElementById("root"),
 );

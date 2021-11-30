@@ -15,6 +15,7 @@ export const colors: Record<string, string> = {
   purple: "110, 107, 233",
 };
 
+
 export const fonts = {
   size: {
     tiny: "10px",
@@ -55,6 +56,8 @@ export const shadows = {
   big: "0 15px 35px 0 rgba(50, 50, 93, 0.06), 0 5px 15px 0 rgba(50, 50, 93, 0.15)",
   hover:
     "0 7px 14px 0 rgba(50, 50, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.08), inset 0 0 1px 0 rgba(0, 0, 0, 0.06)",
+    hard:
+    "0px 2px 6px 0 rgba(0, 0, 0, 0.1), 0 0 1px 0 rgba(50,50,93,0.02), -1px 2px 10px 0 rgba(59, 59, 92, 0.15)",
 };
 
 export const responsive = {
